@@ -145,6 +145,21 @@ app_license = "mit"
 # 	}
 # }
 
+# doc_events = {
+#     "Stock Entries": {
+#         "after_insert": "development.development.doctype.stock_ledger.stock_ledger.update_stock_ledger",
+#         "after_save": "development.development.doctype.stock_ledger.stock_ledger.update_stock_ledger"  
+#     }
+# }
+
+doc_events = {
+    "Stock Entries": {
+        "after_insert": "development.development.doctype.stock_entries.stock_entries.update_stock_ledger_after_insert",
+    }
+}
+
+
+
 # Scheduled Tasks
 # ---------------
 
@@ -165,6 +180,31 @@ app_license = "mit"
 # 		"development.tasks.monthly"
 # 	],
 # }
+
+# scheduler_events = {
+#     "all": [
+# 		"development.tasks.all"
+# 	]
+# }
+
+# scheduler_events = {
+#     "cron": {
+#         "* * * * *": [
+#             "development.tasks.cron"
+#         ]
+#     }
+# }
+
+scheduler_events = {
+    "cron": {
+        "0 0 * * *": [
+            "development.tasks.check_and_send_reorder_notifications"
+        ]
+    }
+}
+
+
+
 
 # Testing
 # -------

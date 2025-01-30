@@ -1,0 +1,28 @@
+{
+ "cards": [
+  {
+   "card": "Total Stock Value-1"
+  },
+  {
+   "card": "No.of Stock Entries in Last Week"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Items below Reorder level",
+   "width": "Half"
+  }
+ ],
+ "creation": "2025-01-22 10:23:18.758667",
+ "dashboard_name": "Inventory Management System",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2025-01-22 20:25:08.548251",
+ "modified_by": "Administrator",
+ "module": "development",
+ "name": "Inventory Management System",
+ "owner": "Administrator"
+}

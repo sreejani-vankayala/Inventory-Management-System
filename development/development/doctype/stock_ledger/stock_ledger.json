@@ -1,0 +1,158 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{item_code} - {item_name} - {####}",
+ "creation": "2025-01-20 17:12:08.642421",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "item_name",
+  "item_group",
+  "warehouse",
+  "column_break_wusp",
+  "transaction_date",
+  "posting_time",
+  "posting_datetime",
+  "section_break_wjpw",
+  "quantity",
+  "incoming_rate",
+  "column_break_msvf",
+  "valuation_rate",
+  "stock_value",
+  "section_break_zvay",
+  "company",
+  "column_break_cpgd",
+  "fiscal_year"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "transaction_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Items"
+  },
+  {
+   "fetch_from": "item_code.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "section_break_wjpw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "item_code.stock_quantity",
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Qty Change"
+  },
+  {
+   "fetch_from": "item_code.cost_price",
+   "fieldname": "valuation_rate",
+   "fieldtype": "Currency",
+   "label": "Valuation Rate"
+  },
+  {
+   "fetch_from": "item_code.warehouse",
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "column_break_msvf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fetch_from": "item_code.item_group",
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "label": "Item Group",
+   "options": "Item Group"
+  },
+  {
+   "fetch_from": "item_code.selling_price",
+   "fieldname": "stock_value",
+   "fieldtype": "Float",
+   "label": "Balance Stock Value"
+  },
+  {
+   "fieldname": "column_break_wusp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Now",
+   "fieldname": "posting_time",
+   "fieldtype": "Time",
+   "label": "Posting Time"
+  },
+  {
+   "default": "Now",
+   "fieldname": "posting_datetime",
+   "fieldtype": "Datetime",
+   "label": "Posting DateTime"
+  },
+  {
+   "fetch_from": "item_code.cost_price",
+   "fieldname": "incoming_rate",
+   "fieldtype": "Float",
+   "label": "Incoming Rate"
+  },
+  {
+   "fieldname": "section_break_zvay",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_cpgd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fiscal_year",
+   "fieldtype": "Data",
+   "label": "Fiscal Year"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-23 10:32:26.982611",
+ "modified_by": "Administrator",
+ "module": "development",
+ "name": "Stock Ledger",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

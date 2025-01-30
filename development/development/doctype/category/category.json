@@ -1,0 +1,119 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:category_name",
+ "creation": "2025-01-20 15:54:20.021669",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "category_name",
+  "category_code",
+  "parent_category",
+  "is_parent_category",
+  "column_break_xpit",
+  "is_active",
+  "default_tax_rate",
+  "applicable_discounts",
+  "section_break_belf",
+  "item_details",
+  "section_break_olmb",
+  "description",
+  "category_image"
+ ],
+ "fields": [
+  {
+   "fieldname": "category_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Category Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "category_code",
+   "fieldtype": "Data",
+   "label": "Category Code"
+  },
+  {
+   "fieldname": "parent_category",
+   "fieldtype": "Link",
+   "label": "Parent Category",
+   "options": "Category"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_parent_category",
+   "fieldtype": "Check",
+   "label": "Is Parent Category"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "category_image",
+   "fieldtype": "Attach Image",
+   "label": "Category Image"
+  },
+  {
+   "fieldname": "column_break_xpit",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "is Active"
+  },
+  {
+   "fieldname": "default_tax_rate",
+   "fieldtype": "Percent",
+   "label": "Default Tax Rate"
+  },
+  {
+   "fieldname": "applicable_discounts",
+   "fieldtype": "Percent",
+   "label": "Applicable Discounts"
+  },
+  {
+   "fieldname": "section_break_olmb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_belf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "item_details",
+   "fieldtype": "Table",
+   "label": "Item Details",
+   "options": "Items List"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-23 11:42:54.209761",
+ "modified_by": "Administrator",
+ "module": "development",
+ "name": "Category",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

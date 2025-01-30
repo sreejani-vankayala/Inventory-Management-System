@@ -1,0 +1,32 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "condition": "doc.reorder_level <= 20",
+ "creation": "2025-01-24 15:53:56.523723",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Reorder Notifications",
+ "enabled": 1,
+ "event": "Save",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>The Item is below the reorder level.</p>",
+ "message_type": "HTML",
+ "modified": "2025-01-25 14:33:54.048599",
+ "modified_by": "Administrator",
+ "module": "development",
+ "name": "Items below Reorder Level",
+ "owner": "Administrator",
+ "property_value": "20",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner",
+   "receiver_by_role": "Stocks User"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "set_property_after_alert": "reorder_level",
+ "subject": "{{ doc.name }} Delivered"
+}

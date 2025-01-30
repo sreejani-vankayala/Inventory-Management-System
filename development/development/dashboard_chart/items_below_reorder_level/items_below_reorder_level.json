@@ -1,0 +1,33 @@
+{
+ "chart_name": "Items below Reorder level",
+ "chart_type": "Report",
+ "creation": "2025-01-22 20:24:44.574173",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "dynamic_filters_json": "{}",
+ "filters_json": "{}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "modified": "2025-01-22 20:24:44.574173",
+ "modified_by": "Administrator",
+ "module": "development",
+ "name": "Items below Reorder level",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "Items below reorder level",
+ "roles": [],
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Bar",
+ "use_report_chart": 0,
+ "x_field": "item_name",
+ "y_axis": [
+  {
+   "color": "#39E4A5",
+   "y_field": "warehouse_reorder_level"
+  }
+ ]
+}

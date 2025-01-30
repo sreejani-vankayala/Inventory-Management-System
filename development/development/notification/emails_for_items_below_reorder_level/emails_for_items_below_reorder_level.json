@@ -1,0 +1,32 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.reorder_level <= 20",
+ "creation": "2025-01-27 21:35:27.108794",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Reorder Notifications",
+ "enabled": 1,
+ "event": "Save",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>{{ doc.reorder_level }} is below the reorder level.</p>\n",
+ "message_type": "Markdown",
+ "modified": "2025-01-30 15:04:22.972088",
+ "modified_by": "Administrator",
+ "module": "development",
+ "name": "Emails for items below reorder level",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "notification_recipient",
+   "receiver_by_role": "Stocks User"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "sender": "Sreejani Vankayala",
+ "sender_email": "sreejanivankayala123@gmail.com",
+ "subject": "{{ doc.name }} is below reorder level"
+}
